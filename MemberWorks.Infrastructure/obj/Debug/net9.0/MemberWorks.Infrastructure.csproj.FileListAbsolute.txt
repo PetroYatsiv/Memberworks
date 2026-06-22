@@ -1,0 +1,17 @@
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/obj/Debug/net9.0/MemberWorks.Infrastructure.csproj.AssemblyReference.cache
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/obj/Debug/net9.0/MemberWorks.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/obj/Debug/net9.0/MemberWorks.Infrastructure.AssemblyInfoInputs.cache
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/obj/Debug/net9.0/MemberWorks.Infrastructure.AssemblyInfo.cs
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/obj/Debug/net9.0/MemberWorks.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/bin/Debug/net9.0/MemberWorks.Infrastructure.deps.json
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/bin/Debug/net9.0/MemberWorks.Infrastructure.dll
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/bin/Debug/net9.0/MemberWorks.Infrastructure.pdb
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/bin/Debug/net9.0/MemberWorks.Application.dll
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/bin/Debug/net9.0/MemberWorks.Domain.dll
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/bin/Debug/net9.0/MemberWorks.Application.pdb
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/bin/Debug/net9.0/MemberWorks.Domain.pdb
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/obj/Debug/net9.0/MemberWo.9866749B.Up2Date
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/obj/Debug/net9.0/MemberWorks.Infrastructure.dll
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/obj/Debug/net9.0/refint/MemberWorks.Infrastructure.dll
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/obj/Debug/net9.0/MemberWorks.Infrastructure.pdb
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/obj/Debug/net9.0/ref/MemberWorks.Infrastructure.dll

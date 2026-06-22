@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "lSxW/v1VlK/MJs1rORUYVIcPxv+VJv2KMy4ieUgExus=",
+  "Source": "MemberWorks.Api",
+  "BasePath": "_content/MemberWorks.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

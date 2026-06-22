@@ -1,0 +1,408 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Api/MemberWorks.Api.csproj": {}
+  },
+  "projects": {
+    "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Api/MemberWorks.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Api/MemberWorks.Api.csproj",
+        "projectName": "MemberWorks.Api",
+        "projectPath": "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Api/MemberWorks.Api.csproj",
+        "packagesPath": "/Users/yatsivpetro/.nuget/packages/",
+        "outputPath": "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/yatsivpetro/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.sitefinity.com/nuget": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Application/MemberWorks.Application.csproj": {
+                "projectPath": "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Application/MemberWorks.Application.csproj"
+              },
+              "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/MemberWorks.Infrastructure.csproj": {
+                "projectPath": "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/MemberWorks.Infrastructure.csproj"
+              },
+              "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Persistence/MemberWorks.Persistence.csproj": {
+                "projectPath": "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Persistence/MemberWorks.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.17, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.17, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Application/MemberWorks.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Application/MemberWorks.Application.csproj",
+        "projectName": "MemberWorks.Application",
+        "projectPath": "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Application/MemberWorks.Application.csproj",
+        "packagesPath": "/Users/yatsivpetro/.nuget/packages/",
+        "outputPath": "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/yatsivpetro/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.sitefinity.com/nuget": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Domain/MemberWorks.Domain.csproj": {
+                "projectPath": "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Domain/MemberWorks.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[14.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Domain/MemberWorks.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Domain/MemberWorks.Domain.csproj",
+        "projectName": "MemberWorks.Domain",
+        "projectPath": "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Domain/MemberWorks.Domain.csproj",
+        "packagesPath": "/Users/yatsivpetro/.nuget/packages/",
+        "outputPath": "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/yatsivpetro/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.sitefinity.com/nuget": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/MemberWorks.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/MemberWorks.Infrastructure.csproj",
+        "projectName": "MemberWorks.Infrastructure",
+        "projectPath": "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/MemberWorks.Infrastructure.csproj",
+        "packagesPath": "/Users/yatsivpetro/.nuget/packages/",
+        "outputPath": "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/yatsivpetro/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.sitefinity.com/nuget": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Application/MemberWorks.Application.csproj": {
+                "projectPath": "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Application/MemberWorks.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Google.Apis.Auth": {
+              "target": "Package",
+              "version": "[1.75.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.17, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[10.0.9, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.19.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Persistence/MemberWorks.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Persistence/MemberWorks.Persistence.csproj",
+        "projectName": "MemberWorks.Persistence",
+        "projectPath": "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Persistence/MemberWorks.Persistence.csproj",
+        "packagesPath": "/Users/yatsivpetro/.nuget/packages/",
+        "outputPath": "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Persistence/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/yatsivpetro/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.sitefinity.com/nuget": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Application/MemberWorks.Application.csproj": {
+                "projectPath": "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Application/MemberWorks.Application.csproj"
+              },
+              "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Domain/MemberWorks.Domain.csproj": {
+                "projectPath": "/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Domain/MemberWorks.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

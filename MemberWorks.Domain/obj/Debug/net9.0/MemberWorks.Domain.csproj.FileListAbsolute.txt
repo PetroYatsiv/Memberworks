@@ -1,0 +1,11 @@
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Domain/bin/Debug/net9.0/MemberWorks.Domain.deps.json
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Domain/bin/Debug/net9.0/MemberWorks.Domain.dll
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Domain/bin/Debug/net9.0/MemberWorks.Domain.pdb
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Domain/obj/Debug/net9.0/MemberWorks.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Domain/obj/Debug/net9.0/MemberWorks.Domain.AssemblyInfoInputs.cache
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Domain/obj/Debug/net9.0/MemberWorks.Domain.AssemblyInfo.cs
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Domain/obj/Debug/net9.0/MemberWorks.Domain.csproj.CoreCompileInputs.cache
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Domain/obj/Debug/net9.0/MemberWorks.Domain.dll
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Domain/obj/Debug/net9.0/refint/MemberWorks.Domain.dll
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Domain/obj/Debug/net9.0/MemberWorks.Domain.pdb
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Domain/obj/Debug/net9.0/ref/MemberWorks.Domain.dll
