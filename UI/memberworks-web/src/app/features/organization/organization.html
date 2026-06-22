@@ -1,0 +1,18 @@
+<h1>Organization</h1>
+
+@if (org(); as o) {
+  <mat-card class="page-card">
+    <mat-card-header>
+      <mat-card-title>{{ o.name }}</mat-card-title>
+      <mat-card-subtitle>Tenant ID: {{ o.id }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-chip-set>
+        <mat-chip><mat-icon matChipAvatar>person</mat-icon>{{ o.userCount }} users</mat-chip>
+        <mat-chip><mat-icon matChipAvatar>home</mat-icon>{{ o.householdCount }} households</mat-chip>
+      </mat-chip-set>
+    </mat-card-content>
+  </mat-card>
+} @else {
+  <p class="muted">Loading…</p>
+}

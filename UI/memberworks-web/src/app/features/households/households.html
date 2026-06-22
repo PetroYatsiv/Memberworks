@@ -1,0 +1,58 @@
+<h1>Households</h1>
+
+<mat-card class="page-card">
+  <mat-card-header><mat-card-title>Create a household</mat-card-title></mat-card-header>
+  <mat-card-content>
+    <div class="form-row">
+      <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput [(ngModel)]="form.name" placeholder="The Smith Household" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" style="min-width: 280px;">
+        <mat-label>Primary user (admin)</mat-label>
+        <mat-select [(ngModel)]="form.primaryUserId">
+          @for (u of users(); track u.id) {
+            <mat-option [value]="u.id">{{ u.firstName }} {{ u.lastName }} — {{ u.email }}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field>
+      <button mat-flat-button color="primary"
+              (click)="create()" [disabled]="saving() || !form.name || !form.primaryUserId">
+        Create
+      </button>
+    </div>
+    @if (error()) { <p class="error">{{ error() }}</p> }
+    @if (!users().length) { <p class="muted">Add a user first on the Users page.</p> }
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="page-card">
+  <mat-card-content>
+    <table mat-table [dataSource]="households()">
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef>Name</th>
+        <td mat-cell *matCellDef="let h">{{ h.name }}</td>
+      </ng-container>
+      <ng-container matColumnDef="primary">
+        <th mat-header-cell *matHeaderCellDef>Primary user</th>
+        <td mat-cell *matCellDef="let h">{{ h.primaryUserName }}</td>
+      </ng-container>
+      <ng-container matColumnDef="members">
+        <th mat-header-cell *matHeaderCellDef>Members</th>
+        <td mat-cell *matCellDef="let h">{{ h.memberCount }}</td>
+      </ng-container>
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let h">
+          <a mat-button color="primary" [routerLink]="['/households', h.id]">
+            Manage <mat-icon>arrow_forward</mat-icon>
+          </a>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="columns"></tr>
+      <tr mat-row *matRowDef="let row; columns: columns"></tr>
+    </table>
+    @if (!households().length) { <p class="muted">No households yet.</p> }
+  </mat-card-content>
+</mat-card>

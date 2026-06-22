@@ -1,0 +1,107 @@
+<p>
+  <a mat-button routerLink="/households"><mat-icon>arrow_back</mat-icon> All households</a>
+</p>
+
+@if (household(); as h) {
+  <h1>{{ h.name }}</h1>
+
+  @if (error()) { <p class="error">{{ error() }}</p> }
+
+  <mat-card class="page-card">
+    <mat-card-header><mat-card-title>Members</mat-card-title></mat-card-header>
+    <mat-card-content>
+      <table mat-table [dataSource]="h.members">
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef>Name</th>
+          <td mat-cell *matCellDef="let m">{{ m.fullName }}</td>
+        </ng-container>
+        <ng-container matColumnDef="email">
+          <th mat-header-cell *matHeaderCellDef>Email</th>
+          <td mat-cell *matCellDef="let m">{{ m.email }}</td>
+        </ng-container>
+        <ng-container matColumnDef="role">
+          <th mat-header-cell *matHeaderCellDef>Role</th>
+          <td mat-cell *matCellDef="let m">
+            @if (m.isPrimary) {
+              <mat-chip color="primary" highlighted>Primary</mat-chip>
+            } @else {
+              <span class="muted">Member</span>
+            }
+          </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="memberColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: memberColumns"></tr>
+      </table>
+
+      <div class="form-row" style="margin-top: 1rem;">
+        <mat-form-field appearance="outline" style="min-width: 260px;">
+          <mat-label>Add member</mat-label>
+          <mat-select [(ngModel)]="memberForm.userId">
+            @for (u of addableUsers(); track u.id) {
+              <mat-option [value]="u.id">{{ u.firstName }} {{ u.lastName }}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+        <button mat-flat-button color="primary" (click)="addMember()" [disabled]="!memberForm.userId">
+          <mat-icon>person_add</mat-icon> Add
+        </button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="page-card">
+    <mat-card-header><mat-card-title>Relationships</mat-card-title></mat-card-header>
+    <mat-card-content>
+      <table mat-table [dataSource]="h.relationships">
+        <ng-container matColumnDef="from">
+          <th mat-header-cell *matHeaderCellDef>From</th>
+          <td mat-cell *matCellDef="let r">{{ r.fromName }}</td>
+        </ng-container>
+        <ng-container matColumnDef="type">
+          <th mat-header-cell *matHeaderCellDef>is the</th>
+          <td mat-cell *matCellDef="let r"><mat-chip>{{ r.typeLabel }}</mat-chip></td>
+        </ng-container>
+        <ng-container matColumnDef="to">
+          <th mat-header-cell *matHeaderCellDef>of</th>
+          <td mat-cell *matCellDef="let r">{{ r.toName }}</td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="relColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: relColumns"></tr>
+      </table>
+      @if (!h.relationships.length) { <p class="muted">No relationships defined.</p> }
+
+      <div class="form-row" style="margin-top: 1rem;">
+        <mat-form-field appearance="outline">
+          <mat-label>From member</mat-label>
+          <mat-select [(ngModel)]="relForm.fromMemberId">
+            @for (m of h.members; track m.memberId) {
+              <mat-option [value]="m.memberId">{{ m.fullName }}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>is the</mat-label>
+          <mat-select [(ngModel)]="relForm.type">
+            @for (t of relationshipTypes; track t) { <mat-option [value]="t">{{ t }}</mat-option> }
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>of member</mat-label>
+          <mat-select [(ngModel)]="relForm.toMemberId">
+            @for (m of h.members; track m.memberId) {
+              <mat-option [value]="m.memberId">{{ m.fullName }}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+        <button mat-flat-button color="primary"
+                (click)="addRelationship()"
+                [disabled]="!relForm.fromMemberId || !relForm.toMemberId || relForm.fromMemberId === relForm.toMemberId">
+          <mat-icon>link</mat-icon> Add relationship
+        </button>
+      </div>
+      <p class="muted">Reads as: “From member” is the “{{ relForm.type }}” of “of member”.</p>
+    </mat-card-content>
+  </mat-card>
+} @else {
+  <p class="muted">Loading…</p>
+}

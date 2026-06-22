@@ -1,0 +1,27 @@
+<div style="max-width: 420px; margin: 8vh auto 0; text-align: center;">
+  <mat-card>
+    <mat-card-header style="justify-content: center;">
+      <mat-card-title>
+        <mat-icon style="vertical-align: middle;">groups</mat-icon>
+        MemberWorks
+      </mat-card-title>
+      <mat-card-subtitle>Household Management</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content style="display: flex; flex-direction: column; align-items: center; gap: 1rem; padding-top: 1rem;">
+      @if (configured) {
+        <p>Sign in to continue</p>
+        <div #googleBtn></div>
+      } @else {
+        <p class="error">
+          Google sign-in isn't configured yet.<br />
+          Set <code>googleClientId</code> in <code>client/src/app/core/config.ts</code>
+          and <code>Google:ClientId</code> in the API.
+        </p>
+      }
+      @if (error()) {
+        <p class="error">{{ error() }}</p>
+      }
+    </mat-card-content>
+  </mat-card>
+</div>
