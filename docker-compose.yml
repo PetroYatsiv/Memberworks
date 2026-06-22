@@ -1,0 +1,20 @@
+services:
+  db:
+    image: postgres:16
+    container_name: memberworks-db
+    environment:
+      POSTGRES_USER: memberworks
+      POSTGRES_PASSWORD: memberworks
+      POSTGRES_DB: memberworks
+    ports:
+      - "5432:5432"
+    volumes:
+      - memberworks_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U memberworks"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  memberworks_pgdata:
