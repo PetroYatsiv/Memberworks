@@ -15,3 +15,4 @@
 /Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/obj/Debug/net9.0/refint/MemberWorks.Infrastructure.dll
 /Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/obj/Debug/net9.0/MemberWorks.Infrastructure.pdb
 /Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/obj/Debug/net9.0/ref/MemberWorks.Infrastructure.dll
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Infrastructure/obj/Debug/net9.0/MemberWorks.Infrastructure.sourcelink.json

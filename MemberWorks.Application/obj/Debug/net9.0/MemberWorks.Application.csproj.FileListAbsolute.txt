@@ -13,3 +13,4 @@
 /Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Application/obj/Debug/net9.0/refint/MemberWorks.Application.dll
 /Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Application/obj/Debug/net9.0/MemberWorks.Application.pdb
 /Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Application/obj/Debug/net9.0/ref/MemberWorks.Application.dll
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Application/obj/Debug/net9.0/MemberWorks.Application.sourcelink.json

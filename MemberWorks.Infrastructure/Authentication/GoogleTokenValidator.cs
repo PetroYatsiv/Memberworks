@@ -21,7 +21,10 @@ public class GoogleTokenValidator(IOptions<GoogleAuthOptions> options) : IGoogle
             var payload = await GoogleJsonWebSignature.ValidateAsync(idToken, settings);
             return new GoogleUserInfo(payload.Subject, payload.Email, payload.GivenName, payload.FamilyName);
         }
-        catch (InvalidJwtException)
+        // A malformed token throws parse-level exceptions (FormatException / JsonException),
+        // not just InvalidJwtException. Treat any validation failure as "unverifiable" (-> 403)
+        // rather than letting it surface as a 500.
+        catch (Exception ex) when (ex is not OperationCanceledException)
         {
             return null;
         }

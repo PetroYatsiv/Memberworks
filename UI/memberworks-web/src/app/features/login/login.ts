@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, ElementRef, NgZone, inject, signal, viewChild } from '@angular/core';
 import { Router } from '@angular/router';
+import { HttpErrorResponse } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { AuthService } from '../../core/auth.service';
@@ -49,8 +50,13 @@ export class LoginComponent implements AfterViewInit {
     try {
       await this.auth.loginWithGoogle(idToken);
       this.router.navigate(['/households']);
-    } catch {
-      this.error.set('Sign-in failed. Check that the API is running and the Google Client ID matches.');
+    } catch (err) {
+      console.error('Google sign-in failed', err);
+      const detail =
+        err instanceof HttpErrorResponse
+          ? `HTTP ${err.status}: ${err.error?.title ?? err.message}`
+          : String(err);
+      this.error.set(`Sign-in failed. ${detail}`);
     }
   }
 }

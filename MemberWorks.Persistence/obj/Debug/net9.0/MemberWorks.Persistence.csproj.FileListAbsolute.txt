@@ -17,3 +17,4 @@
 /Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Persistence/obj/Debug/net9.0/MemberWorks.Persistence.pdb
 /Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Persistence/obj/Debug/net9.0/MemberWorks.Persistence.genruntimeconfig.cache
 /Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Persistence/obj/Debug/net9.0/ref/MemberWorks.Persistence.dll
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Persistence/obj/Debug/net9.0/MemberWorks.Persistence.sourcelink.json

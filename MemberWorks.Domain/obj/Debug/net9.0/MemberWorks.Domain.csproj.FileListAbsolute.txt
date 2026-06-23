@@ -9,3 +9,4 @@
 /Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Domain/obj/Debug/net9.0/refint/MemberWorks.Domain.dll
 /Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Domain/obj/Debug/net9.0/MemberWorks.Domain.pdb
 /Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Domain/obj/Debug/net9.0/ref/MemberWorks.Domain.dll
+/Users/yatsivpetro/CODE/MemberTest/MemberWorks/MemberWorks.Domain/obj/Debug/net9.0/MemberWorks.Domain.sourcelink.json
