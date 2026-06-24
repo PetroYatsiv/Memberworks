@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../build/MemberWorks.Api.props" />
-</Project>
